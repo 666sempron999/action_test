@@ -7,7 +7,7 @@ on:
     
 jobs:
   build:
-    runs-on: ubunu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # copy repo
       - name: Install python
