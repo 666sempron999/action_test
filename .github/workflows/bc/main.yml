@@ -1,0 +1,20 @@
+name: Code checks
+on: 
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+    
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3 # copy repo
+      - name: Install python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.9
+      - name: 'Run PEP8'
+        uses: quentinguidee/pep8-action@v1
+        with:
+          arguments: '--max-line-length=120'
