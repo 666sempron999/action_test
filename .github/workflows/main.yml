@@ -20,10 +20,9 @@ jobs:
         uses: quentinguidee/pep8-action@v1
         with:
           arguments: '--max-line-length=120'
-
   test_linux: test_windows
-    needs: test_windows
     runs-on: ubuntu-latest
+    needs: test_windows
     steps:
       - uses: actions/checkout@v3 # copy repo
       - name: Install python
