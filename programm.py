@@ -2,7 +2,7 @@ import turtle
 
 turtle.setup(500, 500)
 wn = turtle.Screen()
-wn.bgcolor("lightgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvn")
+wn.bgcolor("lightgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv                                                      n   ")
 # wn.title("Карта прохода по помещению")
 
 tess = turtle.Turtle()
