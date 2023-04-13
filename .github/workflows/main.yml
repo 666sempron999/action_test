@@ -22,7 +22,7 @@ jobs:
           arguments: '--max-line-length=120'
 
   test_linux: test_windows
-    needs: [ test_windows ]
+    needs: test_windows
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3 # copy repo
