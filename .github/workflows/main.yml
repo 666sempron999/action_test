@@ -20,7 +20,7 @@ jobs:
         uses: quentinguidee/pep8-action@v1
         with:
           arguments: '--max-line-length=120'
-  test_linux: test_windows
+  test_linux:
     runs-on: ubuntu-latest
     needs: test_windows
     steps:
